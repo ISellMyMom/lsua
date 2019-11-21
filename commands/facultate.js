@@ -107,7 +107,7 @@ exports.run = async (client, message, args) => {
 		
         msg.awaitReactions(filter, {
             max: 1,
-            time: 10000,
+            time: 35000,
             errors: ['time']
         }).then(collected => {
             const reaction = collected.first();
