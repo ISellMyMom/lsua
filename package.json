@@ -1,12 +1,12 @@
 {
-  "name": "LSUA BOT",
+  "name": "LSUA",
   "version": "0.0.1",
-  "description": "Nenorocireeee",
+  "description": "I'm wathing from above",
   "main": "bot.js",
   "author": "HaZZe",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "ms": "^2.1.2"
+    "discord.js": "^11.3.0",
+    "ms": "^2.1.1"
   }
 }
