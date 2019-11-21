@@ -107,7 +107,7 @@ exports.run = async (client, message, args) => {
 		
         msg.awaitReactions(filter, {
             max: 1,
-            time: 35000,
+            time: 10000,
             errors: ['time']
         }).then(collected => {
             const reaction = collected.first();
@@ -202,7 +202,8 @@ exports.run = async (client, message, args) => {
 					break;
             }
         }).catch(collected => {
-           return message.channel.send(`Timpul de alegere a expirat`);
+			console.log(`Timpul a expirat`);
+			msg.delete();
         });
 
     });
