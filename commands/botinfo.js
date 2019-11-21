@@ -14,7 +14,7 @@ exports.run = async (bot, message, args) => {
                 .addField(`University`, `[uab.ro](https://uab.ro/)`, true)
                 .addField(`Invite`, `[hazze.cf/lsua](https://hazze.cf/lsua/)`, true)
                 .addField(`Developer`, `HaZZe#5401`, true)
-                .setFooter("Prefix: ! | This bot is still under construction")
+                .setFooter("Prefix: lsua. | This bot is still under construction")
                 .setTimestamp()
                 .setColor("#89409A");
             message.channel.send(embed);
