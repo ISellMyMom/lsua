@@ -1,0 +1,6 @@
+{
+	"TOKEN": "secret discret",
+    "PREFIX": "lsua.",
+	"log_channel": "logs",
+	"newbie_channel": "verificare"
+}
