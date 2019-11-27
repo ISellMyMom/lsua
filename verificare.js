@@ -132,7 +132,7 @@ module.exports.run = async (bot, message, args) => {
 		
         msg.awaitReactions(filter, {
             max: 1,
-            time: 10000,
+            time: 25000,
             errors: ['time']
         }).then(collected => {
 			const Welcome = [
