@@ -15,10 +15,9 @@ module.exports.run = async (bot, message, args) => {
         if(!entry) return message.channel.send("Nu exista");
 
         let embed = new Discord.RichEmbed()
-        .setDescription(enter.body)
-        .setColor("#15f153")
-        .addField("Autor", entry.userId)
-        .setFooter("Post ID: " + entry.id);
+        .SetDescription(enter.body)
+        .AddField("Autor", entry.userId)
+        .SetFooter("Post ID: " + entry.id);
 
     message.channel.send({embed:embed});
     });
