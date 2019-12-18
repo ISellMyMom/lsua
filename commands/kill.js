@@ -11,6 +11,10 @@ module.exports.run = async (bot, message, args) => {
         "super puterile lui",
         "mâinile goale",
         "mitraliera (RATATATATA)",
+        "mucu",
+        "sabie",
+        "gandul",
+        "o bomba",
         "un creion"
     ];
     let weapon = weapons[Math.floor(Math.random()*weapons.length)];
