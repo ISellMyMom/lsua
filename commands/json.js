@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
         if(!entry) return message.channel.send("Nu exista");
 
         let embed = new Discord.RichEmbed()
-        .SetDescription(enter.body)
+        .SetDescription(entry.body)
         .AddField("Autor", entry.userId)
         .SetFooter("Post ID: " + entry.id);
 
