@@ -104,8 +104,7 @@ module.exports.run = async (bot, message, args) => {
 	];
 	let fact = random[Math.floor(Math.random()*random.length)];
     
-	//Funct.say(message, "Duma", fact);
-        member.message.send(fact);
+	Funct.say(message, "Duma", fact);
 }
 
 module.exports.help = {
