@@ -138,7 +138,11 @@ module.exports.run = async (bot, message, args) => {
 			  "a aterizat aici, să-i urăm bun venit.",
 			  "a fost târâz aici, ghinion.",
 			  "tocmai a trecut de verificare, nu e prost.",
+			  "iţi urăm ok.",
+			  "face bine, mai vedem.",
+			  "face acum parte din clanu' curentaţilor.",
 			  "a venit însfârşit.",
+			  "a venit să facă prăpăd, eeee nenorocire.",
 			  "este acum un membru oficial."
 			];
 			let WelcomeMessage = Welcome[Math.floor(Math.random()*Welcome.length)];
