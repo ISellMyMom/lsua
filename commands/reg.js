@@ -3,7 +3,8 @@ const Discord = require("discord.js");
 const regulament = require("../assets/regulament.json")
 const fs = require("fs");
 exports.run = async (bot, message, args) => {	
-	console.log(regulament.args[0]);
+	console.log(regulament.regula_1);
+	console.log(regulament.regula_'args[0]');
 	console.log(args[0]);
 }
 
