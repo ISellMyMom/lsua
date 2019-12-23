@@ -23,7 +23,7 @@ fs.readdir("./commands/", (err, files) => {
 
 // When bot go online
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: 'from bunker', type: 3 } });//Watching 
+    bot.user.setPresence({ game: { name: 'colinde', type: 2 } });//Watching 
     bot.user.setStatus('dnd');
     console.log(`[SYSTEM] La cum arata totul, presupun ca ai reusit.`);
 
