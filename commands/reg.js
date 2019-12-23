@@ -13,7 +13,8 @@ exports.run = async (bot, message, args) => {
 	console.log(msg);
 	 var contents = fs.readFileSync("../assets/regulament.json");
 	 var jsonContent = JSON.parse(contents);
-	console.log(jsonContent.regula.1);
+	console.log(jsonContent.regula.reg);
+	console.log(jsonContent.regula.msg);
 }
 
 exports.help = {
