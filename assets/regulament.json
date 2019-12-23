@@ -1,10 +1,10 @@
 {
-  "1":
+  "regula_1":
   {
     "descriere":"Asta este regula 1",
     "sanctiune":"Sanctiune pentru regula 1"
   },
-  "2":
+  "regula_2":
   {
     "descriere":"Asta este regula 2",
     "sanctiune":"Sanctiune pentru regula 2, Hatz"
