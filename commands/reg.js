@@ -4,7 +4,6 @@ const regulament = require("../assets/regulament.json")
 const fs = require("fs");
 exports.run = async (bot, message, args) => {	
 	console.log(regulament.args[0]);
-	console.log(regulament.1);
 	console.log(args[0]);
 }
 
