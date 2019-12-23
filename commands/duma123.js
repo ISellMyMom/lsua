@@ -2,8 +2,7 @@ const duma = require("../assets/dume.json");
 
 module.exports.run = async (bot, message, args) => {
 
-	let dau_duma = duma.dume[Math.floor(Math.random() * duma.dume.length)];
-  message.channel.send(dau_duma);
+  message.channel.send("Duma: " + duma.dume[Math.floor(Math.random() * duma.dume.length)]);
 }
 
 module.exports.help = {
