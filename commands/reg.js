@@ -1,9 +1,11 @@
 	
 const Discord = require("discord.js");
-const economy = require("../assets/regulament.json")
+const regulament = require("../assets/regulament.json")
 const fs = require("fs");
 exports.run = async (bot, message, args) => {	
-	message.channel.send(Regula_1.descriere);
+	message.channel.send(regulament.Regula_1.descriere);
+	console.log(regulament.Regula_1);
+	console.log(regulament.descriere);
 }
 
 exports.help = {
