@@ -62,8 +62,6 @@ setInterval(function() {
   .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
   .catch(console.error);
   }, 30000)
-
-});
 	
 	
 });
