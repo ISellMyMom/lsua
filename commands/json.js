@@ -1,4 +1,4 @@
-const api = "http://jsonplaceholder.typicode.com/posts";
+const api = "http://hazze.cf/dbdiscord/test";
 const snekfetch = require("snekfetch");
 const Discord = require("discord.js");
 
