@@ -1,4 +1,5 @@
-const duma = require("./assets/dume.json");
+const duma = require("../assets/dume.json");
+const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
