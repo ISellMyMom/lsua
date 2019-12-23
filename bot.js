@@ -33,7 +33,7 @@ bot.on('ready', () => {
 	// Get our stats channels
 	const totalUsers = bot.channels.get('658596190983553055');
 	//const onlineUsers = bot.channels.get('658592876095340564');
-	const isorieUsers = bot.channels.get('658597004317818910');
+	const istorieUsers = bot.channels.get('658597004317818910');
 	const economieUsers = bot.channels.get('658597460142194688');
 	const exacteUsers = bot.channels.get('658596678756073473');
 	const dreptUsers = bot.channels.get('658597741261488128');
