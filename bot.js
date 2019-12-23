@@ -48,19 +48,10 @@ bot.on("message", async message => {
         Logging.logGuardianMessageDelete(bot, message);
     }
 	
-	// Custom Prefix
-    let prefixes = JSON.parse(fs.readFileSync("assets/serverPrefixes.json", "utf8"));
-    if(!prefixes[message.guild.id]){
-        prefixes[message.guild.id] = {
-            prefixes: PREFIX
-        };
-    }
-    let prefix = prefixes[message.guild.id].prefixes;
-	
 	// Command Executor
-    if(command.startsWith(prefix)) {
-        let cmd = bot.commands.get(command.slice(prefix.length));
-        if(args.length < 1) Funct.SendUsage(bot, message, command.slice(prefix.length));
+    if(command.startsWith(PREFIX)) {
+        let cmd = bot.commands.get(command.slice(PREFIX.length));
+        if(args.length < 1) Funct.SendUsage(bot, message, command.slice(PREFIX.length));
         if(cmd) cmd.run(bot, message, args);
     }
 
