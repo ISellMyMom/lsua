@@ -1,12 +1,12 @@
 {
-  "regula_1":
+  "regula":
   {
-    "descriere":"Asta este regula 1",
-    "sanctiune":"Sanctiune pentru regula 1"
+    "1":"Asta este regula 1.",
+    "2":"Asta este regula 2."
   },
-  "regula_2":
+  "sanctiune":
   {
-    "descriere":"Asta este regula 2",
-    "sanctiune":"Sanctiune pentru regula 2, Hatz"
+    "1":"Sanctiune 1",
+    "2":"Hatz"
   }
 }
