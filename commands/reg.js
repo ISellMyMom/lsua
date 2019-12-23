@@ -17,6 +17,7 @@ exports.run = async (bot, message, args) => {
 	console.log("--");
 	console.log(regulament.regula_1);
 	console.log(regulament.reg);
+	console.log(regulament.regula_.concat(args[0]));
 
 }
 
