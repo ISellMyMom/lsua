@@ -27,41 +27,66 @@ bot.on('ready', () => {
     bot.user.setStatus('dnd');
     console.log(`[SYSTEM] La cum arata totul, presupun ca ai reusit.`);
 
-// Get our server
-const guild = bot.guilds.get('646435231099781120');
+	// Get our server
+	const guild = bot.guilds.get('646435231099781120');
 
-// Get our stats channels
-const totalUsers = bot.channels.get('658592825457377290');
-const onlineUsers = bot.channels.get('658592876095340564');
-const codeMonkeys = bot.channels.get('658592901701566475');
+	// Get our stats channels
+	const totalUsers = bot.channels.get('658596190983553055');
+	//const onlineUsers = bot.channels.get('658592876095340564');
+	const isorieUsers = bot.channels.get('658597004317818910');
+	const economieUsers = bot.channels.get('658597460142194688');
+	const exacteUsers = bot.channels.get('658596678756073473');
+	const dreptUsers = bot.channels.get('658597741261488128');
+	const teologieUsers = bot.channels.get('658597861646270474');
 
-// Check every 30 seconds for changes
-setInterval(function() {
-  console.log('Getting stats update..')
+	// Check every 30 seconds for changes
+	setInterval(function() {
+	  console.log('Getting stats update..')
 
-  //Get actual counts
-  var userCount = guild.memberCount;
-  var onlineCount = guild.members.filter(m => m.presence.status === 'online').size
-  var coderCount = guild.roles.get('646722466181545986').members.size;
-  
-  // Log counts for debugging
-  console.log("Total Users: " + userCount);
-  console.log("Online Users: " + onlineCount);
-  console.log("Coders: " + coderCount);
+	  //Get actual counts
+	  var userCount = guild.memberCount;
+	  //var onlineCount = guild.members.filter(m => m.presence.status === 'online').size
+	  var istorieCount = guild.roles.get('646722983548944394').members.size;//
+	  var economieCount = guild.roles.get('646722220051267631').members.size;
+	  var exacteCount = guild.roles.get('646722466181545986').members.size;
+	  var dreptCount = guild.roles.get('646724700927557642').members.size;
+	  var teologieCount = guild.roles.get('646723322297450536').members.size;
+	  
+	  // Log counts for debugging
+	  /*console.log("Total Users: " + userCount);
+	  console.log("Online Users: " + onlineCount);
+	  console.log("Coders: " + coderCount);*/
 
-  // Set channel names
-  totalUsers.setName("Total Users: " + userCount)
-  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
-  .catch(console.error);
+	  // Set channel names
+	  totalUsers.setName("👤 Total Membrii: " + userCount)
+	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+	  .catch(console.error);
 
-  onlineUsers.setName("Online Users: " + onlineCount)
-  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
-  .catch(console.error);
+	  /*onlineUsers.setName("Online Users: " + onlineCount)
+	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+	  .catch(console.error);*/
 
-  codeMonkeys.setName("Coders: " + coderCount)
-  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
-  .catch(console.error);
-  }, 30000)
+	  istorieUsers.setName("📖 Isotrie Si Filologie: " + coderCount)
+	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+	  .catch(console.error);
+	  
+	  economieUsers.setName("💶 Stiinte Economice: " + coderCount)
+	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+	  .catch(console.error);
+	  
+	  exacteUsers.setName("⚡ Stiinte Exacte: " + coderCount)
+	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+	  .catch(console.error);
+	  
+	  dreptUsers.setName("💼 Drept: " + coderCount)
+	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+	  .catch(console.error);
+	  
+	  teologieUsers.setName("😇 Teologie: " + coderCount)
+	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+	  .catch(console.error);
+	  
+	  }, 30000)
 	
 	
 });
