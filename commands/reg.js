@@ -7,6 +7,7 @@ exports.run = async (bot, message, args) => {
 	console.log(regulament.regula);
 	console.log(regulament.sanctiune.reg);
 	console.log(args[0]);
+	console.log(reg);
 }
 
 exports.help = {
