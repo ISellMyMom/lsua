@@ -12,5 +12,5 @@ exports.help = {
     name: "reg",
     type: "info",
     desc: "Test",
-    usage: "reg"
+    usage: "reg <id>"
 }
