@@ -1,4 +1,4 @@
-const duma = require("../assets/dume.json");
+const duma = require("./assets/dume.json");
 
 module.exports.run = async (bot, message, args) => {
 
