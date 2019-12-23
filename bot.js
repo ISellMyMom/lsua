@@ -26,6 +26,46 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: 'from bunker', type: 3 } });//Watching 
     bot.user.setStatus('dnd');
     console.log(`[SYSTEM] La cum arata totul, presupun ca ai reusit.`);
+
+// Get our server
+const guild = bot.guilds.get('646435231099781120');
+
+// Get our stats channels
+const totalUsers = bot.channels.get('658592825457377290');
+const onlineUsers = bot.channels.get('658592876095340564');
+const codeMonkeys = bot.channels.get('658592901701566475');
+
+// Check every 30 seconds for changes
+setInterval(function() {
+  console.log('Getting stats update..')
+
+  //Get actual counts
+  var userCount = guild.memberCount;
+  var onlineCount = guild.members.filter(m => m.presence.status === 'online').size
+  var coderCount = guild.roles.get('646722466181545986').members.size;
+  
+  // Log counts for debugging
+  console.log("Total Users: " + userCount);
+  console.log("Online Users: " + onlineCount);
+  console.log("Coders: " + coderCount);
+
+  // Set channel names
+  totalUsers.setName("Total Users: " + userCount)
+  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+  .catch(console.error);
+
+  onlineUsers.setName("Online Users: " + onlineCount)
+  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+  .catch(console.error);
+
+  codeMonkeys.setName("Coders: " + coderCount)
+  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
+  .catch(console.error);
+  }, 30000)
+
+});
+	
+	
 });
 
 bot.on("message", async message => {
