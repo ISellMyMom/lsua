@@ -1,9 +1,9 @@
 	
 const Discord = require("discord.js");
-const regulament = require("../assets/regulament.json")
 const fs = require("fs");
+const regulament = require("../assets/regulament.json")
 exports.run = async (bot, message, args) => {
-	let msg = messasge.content.join("@");
+	let msg = message.content.join("@");
 	let reg = args.join("#");
 	console.log(regulament);
 	console.log(regulament.regula);
@@ -11,6 +11,9 @@ exports.run = async (bot, message, args) => {
 	console.log(args[0]);
 	console.log(reg);
 	console.log(msg);
+	 var contents = fs.readFileSync("../assets/regulament.json");
+	 var jsonContent = JSON.parse(contents);
+	console.log(jsonContent.regula.1);
 }
 
 exports.help = {
