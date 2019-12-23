@@ -67,23 +67,23 @@ bot.on('ready', () => {
 	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
 	  .catch(console.error);*/
 
-	  istorieUsers.setName("📖 Isotrie Si Filologie: " + coderCount)
+	  istorieUsers.setName("📖 Isotrie Si Filologie: " + istorieCount)
 	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
 	  .catch(console.error);
 	  
-	  economieUsers.setName("💶 Stiinte Economice: " + coderCount)
+	  economieUsers.setName("💶 Stiinte Economice: " + economieCount)
 	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
 	  .catch(console.error);
 	  
-	  exacteUsers.setName("⚡ Stiinte Exacte: " + coderCount)
+	  exacteUsers.setName("⚡ Stiinte Exacte: " + exacteCount)
 	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
 	  .catch(console.error);
 	  
-	  dreptUsers.setName("💼 Drept: " + coderCount)
+	  dreptUsers.setName("💼 Drept: " + dreptCount)
 	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
 	  .catch(console.error);
 	  
-	  teologieUsers.setName("😇 Teologie: " + coderCount)
+	  teologieUsers.setName("😇 Teologie: " + teologieCount)
 	  .then(newChannel => console.log(`Stat channel renamed to: ${newChannel.name}`))
 	  .catch(console.error);
 	  
