@@ -1,12 +1,12 @@
 {
   "regula":
   {
-    "1":"Asta este regula 1.",
-    "2":"Asta este regula 2."
+    "1@":"Asta este regula 1.",
+    "2@":"Asta este regula 2."
   },
   "sanctiune":
   {
-    "1":"Sanctiune 1",
-    "2":"Hatz"
+    "1@":"Sanctiune 1",
+    "2@":"Hatz"
   }
 }
