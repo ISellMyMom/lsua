@@ -53,9 +53,10 @@ bot.on('ready', () => {
 	  var teologieCount = guild.roles.get('646723322297450536').members.size;
 	  
 	  // Log counts for debugging
-	  /*console.log("Total Users: " + userCount);
-	  console.log("Online Users: " + onlineCount);
-	  console.log("Coders: " + coderCount);*/
+	  console.log("Total Users: " + userCount);
+	  //console.log("Online Users: " + onlineCount);
+	  console.log("Istorie: " + istorieCount);
+	  console.log("Economie: " + economieCount);
 
 	  // Set channel names
 	  totalUsers.setName("👤 Total Membrii: " + userCount)
