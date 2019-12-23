@@ -5,7 +5,7 @@ const regulament = require("../assets/regulament.json")
 exports.run = async (bot, message, args) => {
 	
 	let reg = 'regula_'.concat(args[0]);
-	let rrg = (regulament."regula_".concat(args[0]));
+	let rrg = (regulament.("regula_".concat(args[0])));
 	console.log(rrg);
 	console.log("--");
 	console.log(reg);
